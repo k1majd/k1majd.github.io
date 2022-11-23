@@ -3,7 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 
 const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
 );
 
 const last_posts = posts.slice(0, 3);
@@ -12,113 +14,130 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout>
   <style>
     a:link {
-      color: green; 
-      background-color: transparent; 
+      color: green;
+      background-color: transparent;
       text-decoration: none;
     }
-    
+
     a:visited {
       color: green;
       background-color: transparent;
       text-decoration: none;
     }
-    
+
     a:hover {
       color: green;
       background-color: transparent;
       text-decoration: underline;
     }
-    
+
     a:active {
       color: green;
       background-color: transparent;
       text-decoration: underline;
     }
-    </style>
-    <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Keyvan Majd</div>
-      <div class="text-3xl py-3 font-bold">CS PhD Student @ ASU</div>
-      <div class="py-2">
-        <text class="text-lg">
-          I am currently a PhD student in the <a href="https://scai.engineering.asu.edu">School of Computing and Augmented Intelligence</a> at <a href="https://asu.edu">Arizona State University</a>, 
-          co-advised by <a href="http://henibenamor.weebly.com">Dr. Heni Ben Amor</a> and <a href="http://fainekos.net">Dr. Georgios Fainekos</a>.
-          </text
-        >
-      </div>
+  </style>
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Keyvan Majd</div>
+    <div class="text-3xl py-3 font-bold">CS PhD Student @ ASU</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am currently a PhD student in the <a
+          href="https://scai.engineering.asu.edu"
+          >School of Computing and Augmented Intelligence</a
+        > at <a href="https://asu.edu">Arizona State University</a>, co-advised
+        by <a href="http://henibenamor.weebly.com">Dr. Heni Ben Amor</a> and <a
+          href="http://fainekos.net">Dr. Georgios Fainekos</a
+        >.
+      </text>
     </div>
+  </div>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-  
-      /* Create two unequal columns that floats next to each other */
-      .column {
-        float: left;
-        padding: 1px;
-      }
-  
-      .left {
-        width: 13%;
-      }
-  
-      .right {
-        width: 87%;
-      }
-  
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-    </style>
-    <div class="mb-5">
-      <div class="text-3xl w-full font-bold">News</div>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 1px;
+    }
+
+    .left {
+      width: 13%;
+    }
+
+    .right {
+      width: 87%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">News</div>
+  </div>
+  <div class="row">
+    <div class="column left">
+      <span class="badge date">Dec 9, 2022</span>
     </div>
-    <div class="row">
-      <div class="column left">
-        <span class="badge date">Dec 9, 2022</span>
-      </div>
-      <div class="column right">
-        <div class="mb-10 text-justify">
-          I'll present our paper <a href="/papers/Neurips22.pdf">"Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics"</a> at <a href="http://www.robot-learning.ml/2022/"> NeurIPS 2022 5th Robot Learning workshop: Trustworthy Robotics</a>.
-          Talk is available <a
+    <div class="column right">
+      <div class="mb-10 text-justify">
+        I'll present our paper <a href="/papers/Neurips22.pdf"
+          >"Certifiably-correct Control Policies for Safe Learning and
+          Adaptation in Assistive Robotics"</a
+        > at <a href="http://www.robot-learning.ml/2022/">
+          NeurIPS 2022 5th Robot Learning workshop: Trustworthy Robotics</a
+        >. Talk is available <a
           href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad"
           >here</a
-        >. 
-        </div>
-      </div>
-
-      <div class="column left">
-        <span class="badge date">Oct 28, 2022</span>
-      </div>
-      <div class="column right">
-        <div class="mb-10 text-justify">
-          <a href="/papers/Neurips22.pdf">Our paper</a> at NeurIPS 2022 Robot Learning workshop will receive <b>a Best Paper Award</b>!
-        </div>
-      </div>
-
-      <div class="column left">
-        <span class="badge date">Oct 21, 2022</span>
-      </div>
-      <div class="column right">
-        <div class="mb-10 text-justify">
-          Our paper <a href="/papers/Neurips22.pdf">"Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics"</a> has been accepted to <a href="http://www.robot-learning.ml/2022/"> NeurIPS 2022 Robot Learning workshop</a>!
-        </div>
-      </div>
-
-      <div class="column left">
-        <span class="badge date">Sep 10, 2022</span>
-      </div>
-      <div class="column right">
-        <div class="mb-10 text-justify">
-          Our paper <a href="https://openreview.net/forum?id=X4228W0QpvN">"Safe Robot Learning in Assistive Devices through Neural Network Repair"</a> has been accepted to <a href="https://corl2022.org">CoRL 2022</a>!
-        </div>
+        >.
       </div>
     </div>
-    <!-- <div>
+
+    <div class="column left">
+      <span class="badge date">Oct 28, 2022</span>
+    </div>
+    <div class="column right">
+      <div class="mb-10 text-justify">
+        <a href="/papers/Neurips22.pdf">Our paper</a> at NeurIPS 2022 Robot Learning
+        workshop will receive <b>a Best Paper Award</b>!
+      </div>
+    </div>
+
+    <div class="column left">
+      <span class="badge date">Oct 21, 2022</span>
+    </div>
+    <div class="column right">
+      <div class="mb-10 text-justify">
+        Our paper <a href="/papers/Neurips22.pdf"
+          >"Certifiably-correct Control Policies for Safe Learning and
+          Adaptation in Assistive Robotics"</a
+        > has been accepted to <a href="http://www.robot-learning.ml/2022/">
+          NeurIPS 2022 Robot Learning workshop</a
+        >!
+      </div>
+    </div>
+
+    <div class="column left">
+      <span class="badge date">Sep 10, 2022</span>
+    </div>
+    <div class="column right">
+      <div class="mb-10 text-justify">
+        Our paper <a href="https://openreview.net/forum?id=X4228W0QpvN"
+          >"Safe Robot Learning in Assistive Devices through Neural Network
+          Repair"</a
+        > has been accepted to <a href="https://corl2022.org">CoRL 2022</a>!
+      </div>
+    </div>
+  </div>
+  <!-- <div>
       <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
     </div>
 
@@ -162,5 +181,4 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0"></div>
       ))
     } -->
-
 </BaseLayout>
