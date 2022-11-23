@@ -1,0 +1,10 @@
+@article{majd2019stable,
+  title={A stable analytical solution method for car-like robot trajectory tracking and optimization},
+  author={Majd, Keyvan and Razeghi-Jahromi, Mohammad and Homaifar, Abdollah},
+  journal={IEEE/CAA Journal of Automatica Sinica},
+  volume={7},
+  number={1},
+  pages={39--47},
+  year={2019},
+  publisher={IEEE}
+}

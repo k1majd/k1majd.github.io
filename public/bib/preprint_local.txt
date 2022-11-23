@@ -1,0 +1,6 @@
+@article{majd2021local,
+  title={Local Repair of Neural Networks Using Optimization},
+  author={Majd, Keyvan and Zhou, Siyu and Amor, Heni Ben and Fainekos, Georgios and Sankaranarayanan, Sriram},
+  journal={arXiv preprint arXiv:2109.14041},
+  year={2021}
+}

@@ -1,0 +1,7 @@
+@inproceedings{majd2022safe,
+  title={Safe Robot Learning in Assistive Devices through Neural Network Repair},
+  author={Majd, Keyvan and Clark, Geoffrey Mitchell and Khandait, Tanmay and Zhou, Siyu and Sankaranarayanan, Sriram and Fainekos, Georgios and Amor, Heni},
+  booktitle={6th Annual Conference on Robot Learning},
+  year={2022},
+  organization={PMLR}
+}

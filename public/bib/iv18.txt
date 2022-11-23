@@ -1,0 +1,8 @@
+@inproceedings{majd2018optimal,
+  title={Optimal kinematic-based trajectory planning and tracking control of autonomous ground vehicle using the variational approach},
+  author={Majd, Keyvan and Razeghi-Jahromi, Mohammad and Homaifar, Abdollah},
+  booktitle={2018 IEEE Intelligent Vehicles Symposium (IV)},
+  pages={562--566},
+  year={2018},
+  organization={IEEE}
+}

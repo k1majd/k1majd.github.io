@@ -1,0 +1,8 @@
+@inproceedings{dadvar2022joint,
+  title={Joint communication and motion planning for cobots},
+  author={Dadvar, Mehdi and Majd, Keyvan and Oikonomou, Elena and Fainekos, Georgios and Srivastava, Siddharth},
+  booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+  pages={4771--4777},
+  year={2022},
+  organization={IEEE}
+}

@@ -1,0 +1,161 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume">
+  <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: green;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: green;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Curriculum Vitae</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm a PhD student in Computer Science with 6+ years of research experience
+    in safe robot learning and control, repair and verification of
+    cyber-physical systems, and optimization and machine learning. Dominion of
+    various programming languages, machine learning frameworks, and optimization
+    tools. Full CV is available <b><a href="/cv_keyvan_majd_11_20_2022.pdf">here</a
+    ></b>.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Arizona State University | 2019 - Present"
+      subtitle="Ph.D. in Computer Science"
+    />
+    <TimeLineElement
+      title="North Carolina A&T State University | 2017 - 2019"
+      subtitle="M.Sc. in Electrical Engineering"
+    />
+    <TimeLineElement
+      title="Ferdowsi University of Mashhad | 2011 - 2015"
+      subtitle="B.Sc. Electrical Engineering"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Graduate Research Assistant | 2020 - Present"
+      subtitle="Arizona State University"
+    />
+    <TimeLineElement
+      title="Graduate Teaching Assistant for Introduction to Theoretical Computer Science | 2020 "
+      subtitle="Arizona State University"
+    />
+    <TimeLineElement
+      title="Graduate Teaching Assistant for Introduction to Mobile Robotics | 2019 "
+      subtitle="Arizona State University"
+    />
+    <TimeLineElement
+      title="Graduate Research Assistant | 2017 - 2019 "
+      subtitle="North Carolina A&T State University"
+    />
+    <TimeLineElement
+      title="Graduate Teaching Assistant for Stochastic Process and Random Variables | 2017 "
+      subtitle="North Carolina A&T State University"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Professional Services</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="­Session chair of Motion and Path Planning in the 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (iROS) | 2021"
+    />
+    <TimeLineElement
+      title="Member of Toyota Human Support Robot (HSR) Developer Community | 2019 - Present "
+    />
+    <TimeLineElement
+      title="­Reviewer for Conferences | 2018 - Present "
+      subtitle="IEEE Conference on Decision and Control (CDC), International Conference on Robotics and Automation (ICRA), IEEE/RSJ International Conference on Intelligent Robots and Systems (iROS), American Control Conference (ACC)"
+    />
+    <TimeLineElement
+      title="­Reviewer for Journals | 2018 - Present "
+      subtitle="IEEE Transactions on Vehicular Technology, IET Radar, Sonar & Navigation, IET Electronics Letters"
+    />
+    <TimeLineElement
+      title="­	President of Iranian Student Association, Greensboro NC | 2017 - 2018"
+    />
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div> -->
+
+  <!-- <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.efset.org/cert/DxtNKG" target="_blank">
+        EF SET English Certificate 74/100 (C2 Proficient)</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc-en-sp"
+        target="_blank"
+      >
+        Scrum Foundation Professional Certificate (SFPC)</a
+      >
+    </li>
+  </ul> -->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Farsi (Native)</li>
+    <li>English (Fluent)</li>
+    <li>C/C++</li>
+    <li>Python</li>
+    <li>MATLAB</li>
+    <li>TensorFlow</li>
+    <li>Keras</li>
+    <li>R</li>
+    <li>SAS</li>
+    <li>SVM</li>
+    <li>Gazebo</li>
+    <li>ROS</li>
+    <li>Apollo</li>
+    <li>Gurobi</li>
+    <li>Pyomo</li>
+    <li>CPLEX</li>
+    <li>YALMIP</li>
+    <li>HTML</li>
+    <li>Astro</li>
+    <li>Git</li>
+  </ul>
+</BaseLayout>
