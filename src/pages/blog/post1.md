@@ -1,17 +1,105 @@
 ---
-layout: "../../layouts/PostLayout.astro"
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+layout: "../../layouts/BlankLayout.astro"
+title: "Safe Robot Learning in Assistive Devices through Neural Network Repair"
+description: "This project presents NNRepLayer: the first repair technique applied to a real physical system
+"
+# pubDate: "Dec 6 2022"
+heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 ---
+<style>
+    * {
+      box-sizing: border-box;
+    }
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+    /* Create two unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 1px;
+    }
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+    .left {
+      width: 13%;
+    }
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+    .right {
+      width: 87%;
+    }
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+</style>
+<div class="mb-5">
+    <h2 style="text-align:center" id="center" class="text-4xl w-full font-bold ">Safe Robot Learning in Assistive Devices through Neural Network Repair</h2>
+  </div>
+<div>
+    <img
+        src="/projects/nnreplayer_prosthesis/tumb1.png"
+        alt="profile image"
+    />
+</div>
+<div class="mb-10 text-justify">
+    <b> Abstract:</b> 
+    Guaranteeing safety in human-centric applications is critical in robot learning as the learned policies may demonstrate unsafe behaviors in formerly unseen scenarios. We present a framework to locally repair an erroneous policy network to satisfy a set of formal safety constraints using Mixed Integer Quadratic Programming (MIQP). Our MIQP formulation explicitly imposes the safety constraints to the learned policy while minimizing the original loss function. We demonstrate the application of our framework to derive safe policies for a robotic lower-leg prosthesis. 
+  </div>
+<div class=" col-xs-12 col-sm-2 ">
+<div class="center">
+    <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (CORL)</a>	
+        <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (NEURIPS)</a>	
+        <a href="https://github.com/k1majd/NNRepLayer.git" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Source Code</a>
+        <a href="https://www.youtube.com/watch?v=rFjrwiD0pSE&t=4s" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (Neurips)</a></div>
+        </div>
+</div>
+<br />
+<br />
+</div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
+  <div class="row">
+    <div class="column left">
+      <span class="badge">NeurIPS'22</span>
+    </div>
+    <div class="column right">
+      <h3 class="font-semibold mb-0.2 text-justify">
+        Certifiably-correct Control Policies for Safe Learning and Adaptation in
+        Assistive Robotics
+      </h3>
+      <span style="color: #ff0000">(Best Paper Award)</span>
+      <p class="font-light text-sm">
+        <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
+        G. Fainekos, H. Ben Amor
+      </p>
+      <i class="font-light text-sm">
+        Neural Information Processing Systems (NeurIPS) - Robot Learning
+        Workshop, 2022.
+      </i>
+      <p class="my-2 text-justify"></p>
+      <a href="/bib/neurips22.txt">[BibTex]</a>
+    </div>
+  </div>
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+  <br />
+  <div class="row">
+    <div class="column left">
+      <span class="badge">CoRL'22</span>
+    </div>
+    <div class="column right">
+      <h3 class="font-semibold mb-0.2 text-justify">
+        Safe Robot Learning in Assistive Devices through Neural Network Repair
+      </h3>
+      <p class="font-light text-sm">
+        <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
+        G. Fainekos, H. Ben Amor
+      </p>
+      <i class="font-light text-sm">
+        Conference on Robot Learning (CoRL), 2022.
+      </i>
+      <p class="my-2 text-justify"></p>
+      <a href="/bib/corl22.txt">[BibTex]</a>
+    </div>
+  </div>

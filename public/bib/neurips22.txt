@@ -1,0 +1,6 @@
+@inproceedings{majd2022certifiably,
+  title={Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics},
+  author={Majd, Keyvan and Clark, Geoffrey Mitchell and Khandait, Tanmay and Zhou, Siyu and Sankaranarayanan, Sriram and Fainekos, Georgios and Amor, Heni},
+  booktitle={Neural Information Processing Systems (NeurIPS) - Robot Learning Workshop, 2022},
+  year={2022},
+}
