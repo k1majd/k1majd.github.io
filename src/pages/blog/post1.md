@@ -35,12 +35,34 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="text-4xl w-full font-bold ">Safe Robot Learning in Assistive Devices through Neural Network Repair</h2>
   </div>
+<div class="mb-5">
+    <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold "><a
+        href="https://k1majd.github.io"
+        >K. Majd</a
+      >, G. Clark, <a
+        href="https://www.daittan.com"
+        >T. Khandait</a
+      >, <a
+        href="https://www.linkedin.com/in/siyu-zhou-a1449962/"
+        >S. Zhou</a
+      >, <a
+        href="https://home.cs.colorado.edu/~srirams/"
+        >S. Sankaranarayanan</a
+      >, <a
+        href="https://fainekos.net"
+        >G. Fainekos</a
+      >, <a
+        href="http://henibenamor.weebly.com"
+        >H. Ben Amor</a
+      ></h2>
+  </div>
 <div>
     <img
         src="/projects/nnreplayer_prosthesis/tumb1.png"
         alt="profile image"
     />
 </div>
+<div>
 <div class="mb-10 text-justify">
     <b> Abstract:</b> 
     Guaranteeing safety in human-centric applications is critical in robot learning as the learned policies may demonstrate unsafe behaviors in formerly unseen scenarios. We present a framework to locally repair an erroneous policy network to satisfy a set of formal safety constraints using Mixed Integer Quadratic Programming (MIQP). Our MIQP formulation explicitly imposes the safety constraints to the learned policy while minimizing the original loss function. We demonstrate the application of our framework to derive safe policies for a robotic lower-leg prosthesis. 
