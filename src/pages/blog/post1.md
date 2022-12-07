@@ -51,7 +51,7 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (CORL)</a>	
         <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (NEURIPS)</a>	
         <a href="https://github.com/k1majd/NNRepLayer.git" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Source Code</a>
-        <a href="https://www.youtube.com/watch?v=rFjrwiD0pSE&t=4s" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (Neurips)</a></div>
+        <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (Neurips)</a></div>
         </div>
 </div>
 <br />
