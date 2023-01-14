@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlankLayout.astro"
 title: "Risk-bounded Motion Planning and Control in Confined Dynamic Environment"
-description: "This project addresses the \"Freezing Robot\" problem in dynamic confined environments. We introduced a method to bound the probability of collision in finite-time to a given value."
+description: "This project addresses the \"Freezing Robot\" problem in dynamic confined environments. We introduced a method to bound the probability of collision to a given value in finite-time."
 pubDate: "Sep 1 2021"
 heroImage: "/projects/nnreplayer_prosthesis/tumb2.gif"
 ---

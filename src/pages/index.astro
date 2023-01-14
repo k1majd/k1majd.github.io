@@ -71,7 +71,6 @@ const last_posts = posts.slice(0, 3);
       </p>
     </div>
   </div>
-
   <style>
     * {
       box-sizing: border-box;
@@ -98,7 +97,40 @@ const last_posts = posts.slice(0, 3);
       clear: both;
     }
   </style>
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div>
 
+  <HorizontalCard
+    title={last_posts[0].frontmatter.title}
+    img={last_posts[0].frontmatter.heroImage}
+    desc={last_posts[0].frontmatter.description}
+    url={last_posts[0].url}
+    badge="CoRL'22 - NeurIPS'22"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title={last_posts[1].frontmatter.title}
+    img={last_posts[1].frontmatter.heroImage}
+    desc={last_posts[1].frontmatter.description}
+    url={last_posts[1].url}
+    badge="ICRA'21"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title={last_posts[2].frontmatter.title}
+    img={last_posts[2].frontmatter.heroImage}
+    desc={last_posts[2].frontmatter.description}
+    url={last_posts[2].url}
+    badge="iROS'21 - L-CSS'20"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+
+  <br />
+  <br />
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">News</div>
   </div>
