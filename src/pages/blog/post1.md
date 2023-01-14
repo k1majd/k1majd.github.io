@@ -1,8 +1,7 @@
 ---
 layout: "../../layouts/BlankLayout.astro"
 title: "Safe Robot Learning in Assistive Devices through Neural Network Repair"
-description: "This project presents NNRepLayer: the first repair technique applied to a real physical system
-"
+description: "This project presents NNRepLayer: the first repair technique applied to a real physical system."
 pubDate: "Dec 6 2022"
 heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 ---
@@ -70,10 +69,10 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 <div class=" col-xs-12 col-sm-2 ">
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (CORL)</a>	
-        <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (NEURIPS)</a>	
+		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (CoRL)</a>	
+        <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (NeurIPS)</a>	
         <a href="https://github.com/k1majd/NNRepLayer.git" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Source Code</a>
-        <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (Neurips)</a></div>
+        <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (NeurIPS)</a></div>
         </div>
 </div>
 <br />
