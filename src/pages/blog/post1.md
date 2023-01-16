@@ -57,7 +57,7 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
   </div>
 <div>
     <img
-        src="/projects/nnreplayer_prosthesis/tumb1.png"
+        src="/projects/nnreplayer_prosthesis/gif1.gif"
         alt="profile image"
     />
 </div>
@@ -78,6 +78,14 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 </div>
 <br />
 <br />
+<div>
+    <img
+        src="/projects/nnreplayer_prosthesis/gif2.gif"
+        alt="profile image"
+    />
+</div>
+<br />
+<br />
 </div>
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Publications</div>
@@ -91,7 +99,7 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
         Certifiably-correct Control Policies for Safe Learning and Adaptation in
         Assistive Robotics
       </h3>
-      <span style="color: #ff0000">(Best Paper Award)</span>
+      <span style="color: #ff0000">(Received a Best Paper Award)</span>
       <p class="font-light text-sm">
         <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
         G. Fainekos, H. Ben Amor
