@@ -99,7 +99,7 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
         Certifiably-correct Control Policies for Safe Learning and Adaptation in
         Assistive Robotics
       </h3>
-      <span style="color: #ff0000">(Received a Best Paper Award)</span>
+      <span style="color: #ff0000"><a href="/projects/nnreplayer_prosthesis/neurips_prize.pdf">(Best Paper 2nd Runner-up Award)</a></span>
       <p class="font-light text-sm">
         <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
         G. Fainekos, H. Ben Amor

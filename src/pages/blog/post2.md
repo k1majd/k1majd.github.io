@@ -57,7 +57,7 @@ heroImage: "/projects/nnreplayer_prosthesis/tumb2.gif"
   </div>
 <div>
     <img
-        src="/projects/nnreplayer_prosthesis/tumb3.pdf"
+        src="/projects/nnreplayer_prosthesis/tumb3.jpg"
         alt="profile image"
     />
 </div>
