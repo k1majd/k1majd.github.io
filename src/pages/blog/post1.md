@@ -4,6 +4,7 @@ title: "Safe Robot Learning in Assistive Devices through Neural Network Repair"
 description: "This project presents NNRepLayer: the first repair technique applied to a real physical system."
 pubDate: "Dec 6 2022"
 heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
+badge:  "CoRL'22 - NeurIPS'22"
 ---
 <style>
     * {

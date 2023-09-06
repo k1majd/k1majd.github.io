@@ -4,6 +4,7 @@ title: "Joint Communication and Motion Planning for Cobots"
 description: "This project unifies communication and motion planning to enrich human-robot interaction, to prevent potential deadlocks and freezing situations, and to maintain the planning efficiency in terms of raveled distances."
 pubDate: "Mar 2 2022"
 heroImage: "/projects/nnreplayer_prosthesis/tumb5.png"
+badge: "ICRA'21"
 ---
 <style>
     * {

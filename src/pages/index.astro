@@ -8,7 +8,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     new Date(a.frontmatter.pubDate).valueOf()
 );
 
-const last_posts = posts.slice(0, 3);
+const last_posts = posts.slice(0, 5);
 ---
 
 <BaseLayout>
@@ -57,17 +57,19 @@ const last_posts = posts.slice(0, 3);
       </p>
       <br />
       <p class="text-lg text-justify">
-        The primary focus of my research is to enable robots to safely operate
-        in the real world while interacting with humans, in particular in
-        assistive robotics domain. I approach this by combining the strengths of
-        planning and control with data-driven techniques. Specifically, my
-        research topic includes integrating the global optimization techniques
-        with reinfocement learning and imitation learning to ensure the robot
-        follows a set of safety specifications. To achieve this, I am developing
-        a novel framework that combines imitation learning and verification to
-        learn safe policies for robots. I am also interested in developing
-        computationally efficient optimization-based techniques for learning
-        safe policies for robots.
+        My research primarily focuses on enhancing the capability of robots to
+        operate safely in real-world environments, especially in scenarios
+        involving human interaction. I have explored different safety-critical
+        domains, including assistive robotics, autonomous navigation, and
+        mobility. I approach this by combining the strengths of planning and
+        control with data-driven techniques. Specifically, my research topic
+        includes integrating the global optimization techniques with robot
+        learning to ensure the robot follows a set of safety specifications. To
+        achieve this, I am developing a novel framework combining imitation
+        learning and neural network repair to learn safe policies for robots. I
+        am also interested in developing computationally efficient
+        optimization-based techniques for learning safe control policies in
+        robot learning.
       </p>
     </div>
   </div>
@@ -97,40 +99,64 @@ const last_posts = posts.slice(0, 3);
       clear: both;
     }
   </style>
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  <div style="margin-bottom:1cm;">
+    <div class="text-3xl w-full font-bold mb-2">
+      Current research projects {"</>"}
+    </div>
+    <HorizontalCard
+      title={last_posts[0].frontmatter.title}
+      img={last_posts[0].frontmatter.heroImage}
+      desc={last_posts[0].frontmatter.description}
+      url={last_posts[0].url}
+      badge={last_posts[0].frontmatter.badge}
+      target="_self"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title={last_posts[1].frontmatter.title}
+      img={last_posts[1].frontmatter.heroImage}
+      desc={last_posts[1].frontmatter.description}
+      url={last_posts[1].url}
+      badge={last_posts[1].frontmatter.badge}
+      target="_self"
+    />
+    <!-- <div class="divider my-0"></div> -->
   </div>
 
-  <HorizontalCard
-    title={last_posts[0].frontmatter.title}
-    img={last_posts[0].frontmatter.heroImage}
-    desc={last_posts[0].frontmatter.description}
-    url={last_posts[0].url}
-    badge="CoRL'22 - NeurIPS'22"
-    target="_self"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title={last_posts[1].frontmatter.title}
-    img={last_posts[1].frontmatter.heroImage}
-    desc={last_posts[1].frontmatter.description}
-    url={last_posts[1].url}
-    badge="ICRA'21"
-    target="_self"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title={last_posts[2].frontmatter.title}
-    img={last_posts[2].frontmatter.heroImage}
-    desc={last_posts[2].frontmatter.description}
-    url={last_posts[2].url}
-    badge="iROS'21 - L-CSS'20"
-    target="_self"
-  />
-  <div class="divider my-0"></div>
+  <div style="margin-bottom:1cm;">
+    <div class="text-3xl w-full font-bold mb-2">Past research projects</div>
+    <HorizontalCard
+      title={last_posts[2].frontmatter.title}
+      img={last_posts[2].frontmatter.heroImage}
+      desc={last_posts[2].frontmatter.description}
+      url={last_posts[2].url}
+      badge={last_posts[2].frontmatter.badge}
+      target="_self"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title={last_posts[3].frontmatter.title}
+      img={last_posts[3].frontmatter.heroImage}
+      desc={last_posts[3].frontmatter.description}
+      url={last_posts[3].url}
+      badge={last_posts[3].frontmatter.badge}
+      target="_self"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title={last_posts[4].frontmatter.title}
+      img={last_posts[4].frontmatter.heroImage}
+      desc={last_posts[4].frontmatter.description}
+      url={last_posts[4].url}
+      badge={last_posts[4].frontmatter.badge}
+      target="_self"
+    />
+  </div>
 
-  <br />
-  <br />
+  <!-- <div class="divider my-0"></div> -->
+
+  <!-- <br />
+  <br /> -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">News</div>
   </div>

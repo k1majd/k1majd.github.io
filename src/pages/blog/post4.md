@@ -4,6 +4,7 @@ title: "Kinematic-based Trajectory Planning Framework for Autonomous Ground Vehi
 description: "This project presents an optimization framework for the trajectory planning problem of autonomous vehicles for a bounded time horizon."
 pubDate: "Jan 1 2020"
 heroImage: "/projects/nnreplayer_prosthesis/tumb6.png"
+badge: "IEEE-JAS'19 - IV'18"
 ---
 <style>
     * {
