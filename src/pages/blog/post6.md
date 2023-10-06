@@ -62,6 +62,7 @@ badge: "iROS'23"
   </div>
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (iROS-workshop)</a></div>
-        </div>
+		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (iROS-workshop)</a>
+    <a href="/posters/poster_iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Poster</a>
+    </div>
 </div>
