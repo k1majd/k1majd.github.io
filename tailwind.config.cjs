@@ -4,13 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['IBM Plex Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-				serif: ['IBM Plex Serif', 'ui-serif', 'Georgia', 'serif'],
+				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				serif: ['Source Serif 4', 'ui-serif', 'Georgia', 'serif'],
 			},
 		},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
-		themes: ["corporate", "dracula"],
+		themes: ["wireframe", "black"],
 	},
 }

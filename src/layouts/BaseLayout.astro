@@ -14,28 +14,25 @@ const {
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="corporate">
+<html lang="en" data-theme="wireframe">
   <head>
     <BaseHead title={title} description={description} image={image} />
     <script is:inline>
       // Dark mode toggle: persist preference
-      const theme = localStorage.getItem('theme') || 'corporate';
+      const theme = localStorage.getItem('theme') || 'wireframe';
       document.documentElement.setAttribute('data-theme', theme);
     </script>
   </head>
-  <body>
-    <div class="bg-base-100 drawer drawer-mobile">
-      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content flex flex-col bg-base-100">
-        <Header title={SITE_TITLE} />
-        <div class="md:flex md:justify-center">
-          <main class="p-6 pt-10 max-w-[900px] w-full">
-            <slot />
-          </main>
-        </div>
-        <Footer />
+  <body class="bg-base-100 text-base-content min-h-screen">
+    <SideBar />
+    <Header title={SITE_TITLE} />
+    <div id="main-content">
+      <div class="flex justify-center">
+        <main class="p-6 pt-10 max-w-[900px] w-full">
+          <slot />
+        </main>
       </div>
-      <SideBar />
+      <Footer />
     </div>
   </body>
 </html>
