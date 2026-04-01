@@ -1,0 +1,6 @@
+@inproceedings{kim2026safempd,
+  author    = {Kim, Taekyung and Majd, Keyvan and Okamoto, Hideki and Hoxha, Bardh and Panagou, Dimitra and Fainekos, Georgios},
+  title     = {Safe Model Predictive Diffusion with Shielding},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2026}
+}
