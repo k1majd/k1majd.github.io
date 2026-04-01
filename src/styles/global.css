@@ -187,3 +187,55 @@ a:active {
     color: hsl(var(--pc, var(--b1)));
     text-decoration: none;
 }
+
+/* ─── Abstract hover reveal ─── */
+.abstract-wrap {
+    margin-top: 0.25rem;
+}
+
+.abstract-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: hsl(var(--p));
+    cursor: default;
+    user-select: none;
+    padding: 0.1rem 0;
+}
+
+.abstract-label .abstract-icon {
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-right: 1.5px solid hsl(var(--p));
+    border-bottom: 1.5px solid hsl(var(--p));
+    transform: rotate(-45deg);
+    transition: transform 0.25s ease;
+    margin-top: -1px;
+}
+
+.abstract-wrap:hover .abstract-label .abstract-icon {
+    transform: rotate(45deg);
+}
+
+.abstract-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.25s ease;
+}
+
+.abstract-wrap:hover .abstract-body {
+    max-height: 20rem;
+    opacity: 1;
+}
+
+.abstract-body p {
+    margin: 0.35rem 0 0.25rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: hsl(var(--bc) / 0.75);
+}
