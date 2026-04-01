@@ -2,7 +2,15 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ['IBM Plex Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				serif: ['IBM Plex Serif', 'ui-serif', 'Georgia', 'serif'],
+			},
+		},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
+	daisyui: {
+		themes: ["corporate", "dracula"],
+	},
 }

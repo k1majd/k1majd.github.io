@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography */
+body {
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, .text-5xl, .text-4xl, .text-3xl, .text-2xl {
+    font-family: 'IBM Plex Serif', ui-serif, Georgia, serif;
+}
+
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
@@ -20,13 +29,13 @@ a:visited {
 }
 
 a:hover {
-    color: hsl(var(--pf));
+    color: hsl(var(--pf, var(--p)));
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: hsl(var(--pf));
+    color: hsl(var(--pf, var(--p)));
     background-color: transparent;
     text-decoration: underline;
 }
@@ -47,4 +56,24 @@ a:active {
 .pub-row .pub-content {
     flex: 1;
     min-width: 0;
+}
+
+/* Publication link pills */
+.pub-content a[href] {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    margin: 0.15rem 0.1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid hsl(var(--p));
+    border-radius: 9999px;
+    color: hsl(var(--p));
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.pub-content a[href]:hover {
+    background-color: hsl(var(--p));
+    color: hsl(var(--pc, var(--b1)));
+    text-decoration: none;
 }

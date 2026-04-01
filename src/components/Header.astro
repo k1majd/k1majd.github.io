@@ -18,8 +18,42 @@
       </label>
     </div>
     <div class="navbar-center">
-      <a class="btn btn-ghost normal-case text-xl" href="/">Keyvan Majd ⚡️</a>
+      <a class="btn btn-ghost normal-case text-xl" href="/">Keyvan Majd</a>
     </div>
-    <div class="navbar-end"></div>
+    <div class="navbar-end">
+      <button id="theme-toggle" class="btn btn-ghost btn-square" aria-label="Toggle dark mode">
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none;">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
+<script is:inline>
+  (function() {
+    const toggle = document.getElementById('theme-toggle');
+    const sun = document.getElementById('sun-icon');
+    const moon = document.getElementById('moon-icon');
+    function updateIcons() {
+      const current = document.documentElement.getAttribute('data-theme');
+      if (current === 'dracula') {
+        sun.style.display = 'block';
+        moon.style.display = 'none';
+      } else {
+        sun.style.display = 'none';
+        moon.style.display = 'block';
+      }
+    }
+    updateIcons();
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dracula' ? 'corporate' : 'dracula';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateIcons();
+    });
+  })();
+</script>
