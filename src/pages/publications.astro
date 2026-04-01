@@ -365,39 +365,42 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     } catch { return map; }
   }
 
-  /* ── Semantic Scholar: batch by arXiv IDs found in page links ── */
+  /* ── Semantic Scholar: author papers endpoint ── */
   async function fetchSemanticScholar(): Promise<Map<string, number>> {
     const result = new Map<string, number>();
     try {
-      /* extract arXiv IDs from href attributes in each pub-row */
-      const arxivRows: { row: HTMLElement; paperId: string }[] = [];
-      for (const row of rows) {
-        const links = row.querySelectorAll('a[href]');
-        for (const a of links) {
-          const href = (a as HTMLAnchorElement).href;
-          const m = href.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})/);
-          if (m) { arxivRows.push({ row, paperId: `ARXIV:${m[1]}` }); break; }
-        }
-      }
-      if (!arxivRows.length) return result;
-
-      /* batch POST to Semantic Scholar (up to 500 IDs) */
       const res = await fetch(
-        'https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount',
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ids: arxivRows.map(r => r.paperId) }),
-        }
+        'https://api.semanticscholar.org/graph/v1/author/81905590/papers?fields=title,citationCount&limit=50'
       );
       if (!res.ok) return result;
-      const papers = await res.json();
-      for (let i = 0; i < arxivRows.length; i++) {
-        const p = papers[i];
-        if (p?.citationCount != null) {
-          const h3 = arxivRows[i].row.querySelector('h3');
-          if (h3) result.set(norm(h3.textContent || ''), p.citationCount);
+      const data = await res.json();
+      const papers: { title: string; citationCount: number }[] = data.data || [];
+
+      /* build normalised-title → citation map (keep highest per title) */
+      const citeMap = new Map<string, number>();
+      for (const p of papers) {
+        if (!p.title) continue;
+        const key = norm(p.title);
+        citeMap.set(key, Math.max(citeMap.get(key) ?? 0, p.citationCount ?? 0));
+      }
+
+      /* match each pub-row: exact norm then fuzzy Jaccard */
+      for (const row of rows) {
+        const h3 = row.querySelector('h3');
+        if (!h3) continue;
+        const title = h3.textContent || '';
+        const key = norm(title);
+        let count = citeMap.get(key);
+        if (count == null) {
+          const tw = words(title);
+          let bestScore = 0, bestCount = 0;
+          for (const [k, c] of citeMap) {
+            const s = jaccard(tw, words(k));
+            if (s > bestScore) { bestScore = s; bestCount = c; }
+          }
+          if (bestScore > 0.55) count = bestCount;
         }
+        if (count != null) result.set(key, count);
       }
     } catch { /* skip */ }
     return result;
