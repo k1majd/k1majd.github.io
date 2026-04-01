@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-				serif: ['Source Serif 4', 'ui-serif', 'Georgia', 'serif'],
+				serif: ['Lato', 'Verdana', 'Helvetica', 'sans-serif'],
 			},
 		},
 	},

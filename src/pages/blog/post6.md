@@ -4,7 +4,7 @@ title: "Safety-aware Expansion for Neural Network Repair"
 description: "Inspired by the popular cascade-correlation algorithm, this project introduces a safety-aware growing neural network method aimed at expanding neural networks with new hidden units dedicated exclusively to responding to faulty samples."
 pubDate: "Sep 5 2023"
 heroImage: "/projects/nnreplayer_prosthesis/tumb8.jpg"
-badge: "iROS'23"
+badge: "IROS'23"
 ---
 <style>
     * {
@@ -62,7 +62,7 @@ badge: "iROS'23"
   </div>
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (iROS-workshop)</a>
+		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (IROS-workshop)</a>
     <a href="/posters/poster_iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Poster</a>
     </div>
 </div>
