@@ -11,7 +11,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <button class="sort-btn" data-sort="cited">Most Cited</button>
     </div>
   </div>
-  <p class="cite-source" id="cite-source" style="display:none;">Citation counts via <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>.</p>
+  <p class="cite-source" id="cite-source" style="display:none;">Citation counts via <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> &amp; <a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a>.</p>
 
   <div id="pub-list">
 
@@ -276,63 +276,74 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     return inter / (a.size + b.size - inter || 1);
   }
 
-  /* ── Fetch citation counts from OpenAlex ── */
+  /* ── Fetch citation counts from OpenAlex + Semantic Scholar (take max) ── */
   async function fetchCitations() {
+    /* Run both API fetches in parallel */
+    const [oaCounts, s2Counts] = await Promise.all([
+      fetchOpenAlex(),
+      fetchSemanticScholar(),
+    ]);
+
+    /* Merge: for each row take the higher count from either source */
+    for (const row of rows) {
+      const h3 = row.querySelector('h3');
+      if (!h3) continue;
+      const key = norm(h3.textContent || '');
+      const oa = oaCounts.get(key) ?? -1;
+      const s2 = s2Counts.get(key) ?? -1;
+      const best = Math.max(oa, s2);
+      if (best >= 0) applyCount(row, best);
+    }
+
+    /* Show source note if any citations were loaded */
+    const src = document.getElementById('cite-source');
+    if (src && rows.some(r => r.dataset.citations)) src.style.display = '';
+  }
+
+  /* ── OpenAlex: author name search + title fallback ── */
+  async function fetchOpenAlex(): Promise<Map<string, number>> {
+    const map = new Map<string, number>();
     try {
-      /* 1. Author name search – gets most papers in one call */
       const url =
         'https://api.openalex.org/works?filter=raw_author_name.search:keyvan%20majd' +
         '&per_page=50&select=id,doi,title,cited_by_count' +
         '&mailto=keyvan.majd@gmail.com';
       const res = await fetch(url);
-      if (!res.ok) return;
+      if (!res.ok) return map;
       const data = await res.json();
-      const works: { title: string; cited_by_count: number }[] = data.results || [];
-
-      /* build cite map – keep highest count per normalised title */
-      const citeMap = new Map<string, number>();
-      for (const w of works) {
+      for (const w of (data.results || [])) {
         if (!w.title) continue;
         const key = norm(w.title);
-        const prev = citeMap.get(key) ?? 0;
-        citeMap.set(key, Math.max(prev, w.cited_by_count ?? 0));
+        map.set(key, Math.max(map.get(key) ?? 0, w.cited_by_count ?? 0));
       }
 
-      /* match each pub-row: first try exact norm, then fuzzy Jaccard */
-      const unmatched: HTMLElement[] = [];
+      /* fuzzy-match each pub-row into the map */
+      const result = new Map<string, number>();
       for (const row of rows) {
         const h3 = row.querySelector('h3');
         if (!h3) continue;
         const title = h3.textContent || '';
         const key = norm(title);
-
-        /* exact normalized match */
-        let count = citeMap.get(key);
-
-        /* fuzzy fallback – Jaccard similarity > 0.55 */
+        let count = map.get(key);
         if (count == null) {
           const tw = words(title);
-          let bestScore = 0;
-          let bestCount = 0;
-          for (const [k, c] of citeMap) {
-            const score = jaccard(tw, words(k));
-            if (score > bestScore) { bestScore = score; bestCount = c; }
+          let bestScore = 0, bestCount = 0;
+          for (const [k, c] of map) {
+            const s = jaccard(tw, words(k));
+            if (s > bestScore) { bestScore = s; bestCount = c; }
           }
           if (bestScore > 0.55) count = bestCount;
         }
-
-        if (count != null) {
-          applyCount(row, count);
-        } else {
-          unmatched.push(row);
-        }
+        if (count != null) result.set(key, count);
       }
 
-      /* 2. Fallback: title search for any unmatched papers */
-      for (const row of unmatched) {
+      /* title-search fallback for unmatched papers */
+      for (const row of rows) {
         const h3 = row.querySelector('h3');
         if (!h3) continue;
         const title = h3.textContent || '';
+        const key = norm(title);
+        if (result.has(key)) continue;
         const first5 = title.split(/\s+/).slice(0, 5).join(' ');
         try {
           const r2 = await fetch(
@@ -344,16 +355,52 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           const tw = words(title);
           for (const w of (d2.results || [])) {
             if (w.title && jaccard(tw, words(w.title)) > 0.55) {
-              applyCount(row, w.cited_by_count ?? 0);
+              result.set(key, w.cited_by_count ?? 0);
               break;
             }
           }
         } catch { /* skip */ }
       }
-      /* show source note once at least one citation loaded */
-      const src = document.getElementById('cite-source');
-      if (src && rows.some(r => r.dataset.citations)) src.style.display = '';
-    } catch { /* silently skip if API unreachable */ }
+      return result;
+    } catch { return map; }
+  }
+
+  /* ── Semantic Scholar: batch by arXiv IDs found in page links ── */
+  async function fetchSemanticScholar(): Promise<Map<string, number>> {
+    const result = new Map<string, number>();
+    try {
+      /* extract arXiv IDs from href attributes in each pub-row */
+      const arxivRows: { row: HTMLElement; paperId: string }[] = [];
+      for (const row of rows) {
+        const links = row.querySelectorAll('a[href]');
+        for (const a of links) {
+          const href = (a as HTMLAnchorElement).href;
+          const m = href.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})/);
+          if (m) { arxivRows.push({ row, paperId: `ARXIV:${m[1]}` }); break; }
+        }
+      }
+      if (!arxivRows.length) return result;
+
+      /* batch POST to Semantic Scholar (up to 500 IDs) */
+      const res = await fetch(
+        'https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ids: arxivRows.map(r => r.paperId) }),
+        }
+      );
+      if (!res.ok) return result;
+      const papers = await res.json();
+      for (let i = 0; i < arxivRows.length; i++) {
+        const p = papers[i];
+        if (p?.citationCount != null) {
+          const h3 = arxivRows[i].row.querySelector('h3');
+          if (h3) result.set(norm(h3.textContent || ''), p.citationCount);
+        }
+      }
+    } catch { /* skip */ }
+    return result;
   }
 
   function applyCount(row: HTMLElement, count: number) {
