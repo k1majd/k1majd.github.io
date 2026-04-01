@@ -95,6 +95,11 @@
     const label = document.getElementById('sidebar-theme-label');
     const isMobile = () => window.innerWidth < 768;
 
+    // Restore sidebar state from localStorage (desktop only)
+    if (!isMobile() && localStorage.getItem('sidebar-expanded') === 'true') {
+      sidebar.classList.add('expanded');
+    }
+
     // Sidebar expand/collapse
     toggle.addEventListener('click', () => {
       if (isMobile()) {
@@ -102,6 +107,7 @@
         overlay.classList.toggle('active');
       } else {
         sidebar.classList.toggle('expanded');
+        localStorage.setItem('sidebar-expanded', sidebar.classList.contains('expanded'));
       }
     });
 
