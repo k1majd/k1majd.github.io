@@ -40,6 +40,33 @@ a:active {
     text-decoration: underline;
 }
 
+/* ─── Improve theme readability ─── */
+[data-theme="wireframe"] {
+    --bc: 0 0% 13%;          /* near-black body text */
+    --p: 215 20% 28%;        /* dark slate-blue primary (links, accents) */
+    --pf: 215 20% 20%;       /* primary-focus */
+    --pc: 0 0% 100%;         /* white text on primary bg */
+    --n: 0 0% 30%;           /* neutral: readable dark gray */
+    --nf: 0 0% 22%;          /* neutral-focus */
+    --nc: 0 0% 100%;         /* white text on neutral bg */
+}
+
+[data-theme="black"] {
+    --bc: 0 0% 88%;          /* bright off-white body text */
+    --p: 215 18% 72%;        /* light slate-blue primary (links, accents) */
+    --pf: 215 18% 82%;       /* primary-focus */
+    --pc: 0 0% 5%;           /* dark text on primary bg */
+    --n: 0 0% 75%;           /* neutral: readable light gray */
+    --nf: 0 0% 85%;          /* neutral-focus */
+    --nc: 0 0% 5%;           /* dark text on neutral bg */
+}
+
+/* Ensure badge/muted elements are readable */
+.badge-outline,
+.badge {
+    opacity: 1;
+}
+
 /* ─── Sidebar ─── */
 #sidebar {
     position: fixed;
