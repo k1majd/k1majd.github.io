@@ -274,3 +274,12 @@ a:active {
 
 /* ─── Sort transition ─── */
 .pub-row { transition: opacity 0.18s ease; }
+
+/* ─── Citation source note ─── */
+.cite-source {
+    font-size: 0.65rem;
+    color: hsl(var(--bc) / 0.35);
+    margin: -0.75rem 0 0.75rem;
+    text-align: right;
+}
+.cite-source a { color: hsl(var(--bc) / 0.45); text-decoration: underline; }

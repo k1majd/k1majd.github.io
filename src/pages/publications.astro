@@ -11,6 +11,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <button class="sort-btn" data-sort="cited">Most Cited</button>
     </div>
   </div>
+  <p class="cite-source" id="cite-source" style="display:none;">Citation counts via <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>.</p>
 
   <div id="pub-list">
 
@@ -349,6 +350,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           }
         } catch { /* skip */ }
       }
+      /* show source note once at least one citation loaded */
+      const src = document.getElementById('cite-source');
+      if (src && rows.some(r => r.dataset.citations)) src.style.display = '';
     } catch { /* silently skip if API unreachable */ }
   }
 
