@@ -33,7 +33,7 @@ badge: "IEEE-JAS'19 - IV'18"
     }
 </style>
 <div class="mb-5">
-    <h2 style="text-align:center " id="center" class="text-4xl w-full font-bold ">Kinematic-based Trajectory Planning Framework for Autonomous Ground Vehicles</h2>
+    <h2 style="text-align:center " id="center" class="text-3xl w-full font-bold ">Kinematic-based Trajectory Planning Framework for Autonomous Ground Vehicles</h2>
   </div>
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold "><a
@@ -71,7 +71,7 @@ badge: "IEEE-JAS'19 - IV'18"
 <br />
 </div>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Publications</div>
+    <div class="text-2xl w-full font-bold">Publications</div>
   </div>
   <div class="row">
     <div class="column left">

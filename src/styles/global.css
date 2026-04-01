@@ -5,6 +5,7 @@
 /* Typography */
 body {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.9375rem; /* 15px — slightly tighter than default 16px */
 }
 
 h1, h2, h3, .text-5xl, .text-4xl, .text-3xl, .text-2xl {

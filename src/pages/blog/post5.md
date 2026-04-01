@@ -35,7 +35,7 @@ badge: "IROS'2024"
     }
 </style>
 <div class="mb-5">
-    <h2 style="text-align:center " id="center" class="text-4xl w-full font-bold ">Safety-aware Neural Network Repair for Robotic Systems with Predictive Models</h2>
+    <h2 style="text-align:center " id="center" class="text-3xl w-full font-bold ">Safety-aware Neural Network Repair for Robotic Systems with Predictive Models</h2>
   </div>
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold "><a

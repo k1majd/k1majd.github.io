@@ -33,7 +33,7 @@ badge: "iROS'23"
     }
 </style>
 <div class="mb-5">
-    <h2 style="text-align:center " id="center" class="text-4xl w-full font-bold ">Safety-aware Expansion for Neural Network Repair</h2>
+    <h2 style="text-align:center " id="center" class="text-3xl w-full font-bold ">Safety-aware Expansion for Neural Network Repair</h2>
   </div>
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold "><a

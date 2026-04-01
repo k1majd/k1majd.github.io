@@ -5,22 +5,40 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Curriculum Vitae</div>
+    <div class="text-2xl w-full font-bold">Curriculum Vitae</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Robotics Engineer specializing in behavior generation and safety-critical
-    decision-making for autonomous driving. Experienced in model-based planning
-    and control (MPPI/MPC), learning-enabled components including diffusion-style
-    stochastic sampling and safety-aware policy adaptation, and real-time deployment
-    on physical systems. Ph.D. in Computer Science from Arizona State University.
-    Full CV is available <b
-      ><a href="/cvs/resume_keyvan_majd.pdf">here</a>
-    </b>.
+  <div class="mb-10 text-justify text-base">
+    <p class="mb-3">
+      Robotics engineer specializing in safety-critical autonomy for real-world robotic systems.
+      At Toyota Research Institute of North America (TRINA), I build real-time planning and control
+      systems for autonomous maneuvering of articulated vehicles, combining model-based optimization
+      (MPPI/MPC) with diffusion-inspired trajectory sampling.
+    </p>
+    <p class="mb-3">
+      Previously, I developed SIL/HIL simulation pipelines for ADAS validation at Nikola Corporation,
+      and built real-time adaptive safety controllers for physical human-robot interaction at
+      Honda Research Institute.
+    </p>
+    <p class="mb-3">
+      My research on neural network repair — where learned control policies are formally corrected
+      to satisfy safety constraints via mixed-integer optimization — has been published at CoRL, ICRA,
+      IROS, and received a Best Workshop Paper Award at NeurIPS 2022. I have also contributed to
+      risk-bounded control using stochastic barrier functions, behavior-aware motion planning for
+      collaborative robots, and the Open X-Embodiment large-scale robot learning dataset.
+    </p>
+    <p>
+      Ph.D. in Computer Science from Arizona State University (co-advised by
+      <a href="http://henibenamor.weebly.com">Heni Ben Amor</a> and
+      <a href="http://fainekos.net">Georgios Fainekos</a>),
+      M.Sc. in Electrical Engineering from North Carolina A&T State University,
+      and B.Sc. from Ferdowsi University of Mashhad.
+      Full CV is available <b><a href="/cvs/resume_keyvan_majd.pdf">here</a></b>.
+    </p>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+    <div class="text-2xl w-full font-bold">Education</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
@@ -42,7 +60,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-2xl w-full font-bold">Experience</div>
   </div>
 
   <div class="time-line-container mb-10">
@@ -90,7 +108,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Professional Services</div>
+    <div class="text-2xl w-full font-bold">Professional Services</div>
   </div>
 
   <div class="time-line-container mb-10">
@@ -114,7 +132,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <!-- <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-2xl w-full font-bold">Certifications</div>
   </div> -->
 
   <!-- <ul class="list-disc mx-6 mb-10 grid gap-2">
@@ -134,7 +152,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul> -->
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-2xl w-full font-bold">Skills</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">

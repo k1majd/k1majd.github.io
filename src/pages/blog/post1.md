@@ -33,7 +33,7 @@ badge:  "CoRL'22 - NeurIPS'22"
     }
 </style>
 <div class="mb-5">
-    <h2 style="text-align:center" id="center" class="text-4xl w-full font-bold ">Safe Robot Learning in Assistive Devices through Neural Network Repair</h2>
+    <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold ">Safe Robot Learning in Assistive Devices through Neural Network Repair</h2>
   </div>
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold "><a
@@ -89,7 +89,7 @@ badge:  "CoRL'22 - NeurIPS'22"
 <br />
 </div>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Publications</div>
+    <div class="text-2xl w-full font-bold">Publications</div>
   </div>
   <div class="row">
     <div class="column left">
