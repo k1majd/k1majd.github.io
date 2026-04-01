@@ -32,13 +32,13 @@ a:visited {
 a:hover {
     color: hsl(var(--pf, var(--p)));
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
     color: hsl(var(--pf, var(--p)));
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* ─── Improve theme readability ─── */

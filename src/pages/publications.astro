@@ -13,6 +13,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">Safe Model Predictive Diffusion with Shielding</h3>
       <p class="font-light text-sm">T. Kim, <ins>K. Majd</ins>, B. Hoxha, H. Okamoto, D. Panagou, G. Fainekos</p>
       <i class="font-light text-sm">IEEE International Conference on Robotics and Automation (ICRA), 2026.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">Generating safe, kinodynamically feasible, and optimal trajectories for complex robotic systems is a central challenge in robotics. This paper presents Safe Model Predictive Diffusion (Safe MPD), a training-free diffusion planner that unifies a model-based diffusion framework with a safety shield to generate trajectories that are both kinodynamically feasible and safe by construction. By enforcing feasibility and safety on all samples during the denoising process, our method avoids the common pitfalls of post-processing corrections, such as computational intractability and loss of feasibility. We validate our approach on challenging non-convex planning problems, including kinematic and acceleration-controlled tractor-trailer systems.</p>
+      </details>
     </div>
   </div>
 
@@ -22,6 +26,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">GPU-Accelerated Barrier Rate MPPI Control for Tractor-Trailer Navigation and Collision Avoidance</h3>
       <p class="font-light text-sm"><ins>K. Majd</ins>, H. Parwana, B. Hoxha, S. Hong, H. Okamoto, G. Fainekos</p>
       <i class="font-light text-sm">IEEE International Conference on Intelligent Transportation Systems (ITSC), 2025.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">Articulated vehicles such as tractor-trailers, yard trucks, and similar platforms must often reverse and maneuver in cluttered spaces where pedestrians are present. We present how Barrier-Rate guided Model Predictive Path Integral (BR-MPPI) control can solve navigation in such challenging environments. BR-MPPI embeds Control Barrier Function (CBF) constraints directly into the path-integral update. By steering the importance-sampling distribution toward collision-free, dynamically feasible trajectories, BR-MPPI enhances the exploration strength of MPPI and improves robustness of resulting trajectories. The method is evaluated in the high-fidelity CarMaker simulator on a 12m tractor-trailer tasked with reverse and forward parking in a parking lot.</p>
+      </details>
     </div>
   </div>
 
@@ -31,6 +39,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">Robot Behavior Adaptation in Physical Human-Robot Interactions Based on Learned Safety Preferences</h3>
       <p class="font-light text-sm"><ins>K. Majd</ins>, R. Soltani Zarrin</p>
       <i class="font-light text-sm">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">Robots that can physically interact with humans in a safe manner have the potential to revolutionize application domains like home assistance and nursing care. However, to become long-term companions, such robots must learn user-specific preferences and adapt their behaviors in real time. We propose a Constrained Partially Observable Markov Decision Process framework for modeling human safety preferences over representative variables like force, velocity, and proximity. These variables are modeled as adaptive linear constraints that are updated from human feedback during interaction.</p>
+      </details>
     </div>
   </div>
 
@@ -40,6 +52,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">Repairing Neural Networks for Safety in Robotic Systems using Predictive Models</h3>
       <p class="font-light text-sm"><ins>K. Majd</ins>, G. Clark, G. Fainekos, H. Ben Amor</p>
       <i class="font-light text-sm">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">This paper introduces a new method for safety-aware robot learning, focusing on repairing policies using predictive models. Our method combines behavioral cloning with neural network repair in a two-step supervised learning framework. It first learns a policy from expert demonstrations and then applies repair subject to predictive models to enforce safety constraints. The predictive models can encompass various aspects relevant to robot learning applications, such as proprioceptive states and collision likelihood. Our experimental results demonstrate that the learned policy successfully adheres to a predefined set of safety constraints on two applications: mobile robot navigation, and real-world lower-leg prostheses.</p>
+      </details>
     </div>
   </div>
 
@@ -49,6 +65,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</h3>
       <p class="font-light text-sm">Open X-Embodiment Collaboration (incl. <ins>K. Majd</ins>)</p>
       <i class="font-light text-sm">2nd Workshop on Language and Robot Learning: Language as Grounding (CoRL), 2023.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">Large, high-capacity models trained on diverse datasets have shown remarkable successes on efficiently tackling downstream applications. In domains from NLP to Computer Vision, this has led to a consolidation of pretrained models. Can such a consolidation happen in robotics? In this paper, we provide datasets in standardized data formats and models to explore this possibility in the context of robotic manipulation. We assemble a dataset from 22 different robots collected through a collaboration between 21 institutions, demonstrating 527 skills (160266 tasks). We show that a high-capacity model trained on this data, which we call RT-X, exhibits positive transfer and improves the capabilities of multiple robots by leveraging experience from other platforms.</p>
+      </details>
     </div>
   </div>
 
@@ -58,6 +78,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h3 class="font-semibold mb-0.2 text-justify">Safety-aware Expansion for Neural Network Repair</h3>
       <p class="font-light text-sm"><ins>K. Majd</ins>, G. Fainekos, H. Ben Amor</p>
       <i class="font-light text-sm">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) - Workshop on Formal Methods Techniques in Robotics Systems, 2023.</i>
+      <details>
+        <summary>Abstract</summary>
+        <p class="my-2 text-justify">We present safety-aware expansion, an extension to neural network repair that expands the repaired region while preserving formal safety guarantees. The method iteratively grows the safe operating domain of a repaired policy network, ensuring that the corrected behaviors generalize beyond the initial repair set without violating safety constraints.</p>
+      </details>
     </div>
   </div>
 
@@ -72,8 +96,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">Guaranteeing safety in human-centric applications is critical in robot learning as the learned policies may demonstrate unsafe behaviors in formerly unseen scenarios. We present a framework to locally repair an erroneous policy network to satisfy a set of formal safety constraints using Mixed Integer Quadratic Programming (MIQP). Our MIQP formulation explicitly imposes the safety constraints to the learned policy while minimizing the original loss function. The policy network is then verified to be locally safe. We demonstrate the application of our framework to derive safe policies for a robotic lower-leg prosthesis.</p>
       </details>
-      <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad">[Talk]</a>
-      <a href="/papers/Neurips22.pdf">[Paper]</a>
+      <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad">Talk</a>
+      <a href="/papers/Neurips22.pdf">Paper</a>
     </div>
   </div>
 
@@ -87,9 +111,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">Assistive robotic devices are a particularly promising field of application for neural networks (NN) due to the need for personalization and hard-to-model human-machine interaction dynamics. However, NN based estimators and controllers may produce potentially unsafe outputs over previously unseen data points. In this paper, we introduce an algorithm for updating NN control policies to satisfy a given set of formal safety constraints, while also optimizing the original loss function. Given a set of mixed-integer linear constraints, we define the NN repair problem as a Mixed Integer Quadratic Program (MIQP). In extensive experiments, we demonstrate the efficacy of our repair method in generating safe policies for a lower-leg prosthesis.</p>
       </details>
-      <a href="/bib/corl22.txt">[BibTex]</a>
-      <a href="/papers/CoRL22.pdf">[Paper]</a>
-      <a href="https://github.com/k1majd/NNRepLayer">[Code]</a>
+      <a href="/bib/corl22.txt">BibTex</a>
+      <a href="/papers/CoRL22.pdf">Paper</a>
+      <a href="https://github.com/k1majd/NNRepLayer">Code</a>
     </div>
   </div>
 
@@ -103,11 +127,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">This paper presents a joint communication and motion planning framework that selects from an arbitrary input set of robot communication signals while computing robot motion plans, modeling a human co-worker's imperfect perception using a noisy sensor model and facilitating the specification of a variety of social/workplace compliance priorities with a flexible cost function.</p>
       </details>
-      <a href="/bib/icra22.txt">[BibTex]</a>
-      <a href="https://www.youtube.com/watch?v=rFjrwiD0pSE&t=4s">[Talk]</a>
-      <a href="/papers/ICRA21.pdf">[Paper]</a>
-      <a href="https://arxiv.org/pdf/2109.14004.pdf">[Extended Version]</a>
-      <a href="/posters/poster_ICRA2022.png">[Poster]</a>
+      <a href="/bib/icra22.txt">BibTex</a>
+      <a href="https://www.youtube.com/watch?v=rFjrwiD0pSE&t=4s">Talk</a>
+      <a href="/papers/ICRA21.pdf">Paper</a>
+      <a href="https://arxiv.org/pdf/2109.14004.pdf">Extended Version</a>
+      <a href="/posters/poster_ICRA2022.png">Poster</a>
     </div>
   </div>
 
@@ -121,10 +145,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">We extend time-based RRTs with Control Barrier Functions (CBFs) to generate safe motion plans in dynamic environments with many pedestrians, demonstrated on a high-fidelity model of the Toyota Human Support Robot navigating in narrow corridors.</p>
       </details>
-      <a href="/bib/iros21.txt">[BibTex]</a>
-      <a href="/papers/IROS21.pdf">[Paper]</a>
-      <a href="https://arxiv.org/pdf/2105.01204.pdf">[Extended Version]</a>
-      <a href="https://github.com/k1majd/CBF_TB_RRT.git">[Code]</a>
+      <a href="/bib/iros21.txt">BibTex</a>
+      <a href="/papers/IROS21.pdf">Paper</a>
+      <a href="https://arxiv.org/pdf/2105.01204.pdf">Extended Version</a>
+      <a href="https://github.com/k1majd/CBF_TB_RRT.git">Code</a>
     </div>
   </div>
 
@@ -138,8 +162,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">We design real-time controllers that bound the probability of failure in finite-time using stochastic control barrier functions, illustrated using a simulation of a lane-changing scenario in a highway with dense traffic.</p>
       </details>
-      <a href="/bib/lcss20.txt">[BibTex]</a>
-      <a href="/papers/LCSS2020.pdf">[Paper]</a>
+      <a href="/bib/lcss20.txt">BibTex</a>
+      <a href="/papers/LCSS2020.pdf">Paper</a>
     </div>
   </div>
 
@@ -153,8 +177,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">The car-like robot kinematic model trajectory tracking and control problem is revisited by exploring an optimal analytical solution which guarantees the global exponential stability of the tracking error.</p>
       </details>
-      <a href="/bib/ieee_jas19.txt">[BibTex]</a>
-      <a href="/papers/IEEE_JAS19.pdf">[Paper]</a>
+      <a href="/bib/ieee_jas19.txt">BibTex</a>
+      <a href="/papers/IEEE_JAS19.pdf">Paper</a>
     </div>
   </div>
 
@@ -168,8 +192,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">A novel kinematic-based optimal trajectory planning formulation for an autonomous vehicle, minimizing quadratic errors of position, velocity, and acceleration subject to nonlinear kinematic constraints.</p>
       </details>
-      <a href="/bib/iv18.txt">[BibTex]</a>
-      <a href="/papers/IV18.pdf">[Paper]</a>
+      <a href="/bib/iv18.txt">BibTex</a>
+      <a href="/papers/IV18.pdf">Paper</a>
     </div>
   </div>
 
@@ -186,8 +210,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <summary>Abstract</summary>
         <p class="my-2 text-justify">We propose a framework to repair a pre-trained feed-forward neural network to satisfy a set of properties, formulated as a Mixed Integer Quadratic Program (MIQP).</p>
       </details>
-      <a href="/bib/preprint_local.txt">[BibTex]</a>
-      <a href="https://arxiv.org/pdf/2109.14041.pdf">[arXiv]</a>
+      <a href="/bib/preprint_local.txt">BibTex</a>
+      <a href="https://arxiv.org/pdf/2109.14041.pdf">arXiv</a>
     </div>
   </div>
 </BaseLayout>
