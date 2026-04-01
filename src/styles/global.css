@@ -239,3 +239,38 @@ a:active {
     line-height: 1.5;
     color: hsl(var(--bc) / 0.75);
 }
+
+/* ─── Sort bar ─── */
+.sort-bar { display: flex; gap: 0.35rem; align-items: center; }
+.sort-btn {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid hsl(var(--bc) / 0.2);
+    background: transparent;
+    color: hsl(var(--bc) / 0.55);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.sort-btn:hover {
+    border-color: hsl(var(--p));
+    color: hsl(var(--p));
+}
+.sort-btn.active {
+    background: hsl(var(--p));
+    color: hsl(var(--pc, var(--b1)));
+    border-color: hsl(var(--p));
+}
+
+/* ─── Citation count ─── */
+.cite-count {
+    display: none;
+    font-size: 0.7rem;
+    color: hsl(var(--bc) / 0.45);
+    font-style: normal;
+}
+
+/* ─── Sort transition ─── */
+.pub-row { transition: opacity 0.18s ease; }
