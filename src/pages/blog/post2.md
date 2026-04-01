@@ -6,32 +6,6 @@ pubDate: "Sep 1 2021"
 heroImage: "/projects/nnreplayer_prosthesis/tumb2.gif"
 badge: "IROS'21 - L-CSS'20"
 ---
-<style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two unequal columns that floats next to each other */
-    .column {
-      float: left;
-      padding: 1px;
-    }
-
-    .left {
-      width: 13%;
-    }
-
-    .right {
-      width: 87%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-</style>
 <div class="mb-5">
     <h2 style="text-align:center " id="center" class="text-3xl w-full font-bold ">Risk-bounded Motion Planning and Control in Confined Dynamic Environment</h2>
   </div>
@@ -70,9 +44,9 @@ badge: "IROS'21 - L-CSS'20"
 <div class=" col-xs-12 col-sm-2 ">
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/IROS21.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (iros)</a>	
-        <a href="/papers/LCSS2020.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (l-css)</a>	
-        <a href="https://github.com/k1majd/CBF_TB_RRT" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Source Code</a></div>
+		<a href="/papers/IROS21.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Full Paper (iros)</a>	
+        <a href="/papers/LCSS2020.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Full Paper (l-css)</a>	
+        <a href="https://github.com/k1majd/CBF_TB_RRT" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-outline" data-mtop="0" data-mbottom="0">Source Code</a></div>
         </div>
 </div>
 <br />
@@ -84,45 +58,22 @@ badge: "IROS'21 - L-CSS'20"
   <div class="mb-5">
     <div class="text-2xl w-full font-bold">Publications</div>
   </div>
-  <div class="row">
-    <div class="column left">
-      <span class="badge">IROS'21</span>
-    </div>
-    <div class="column right">
-      <h3 class="font-semibold mb-0.2 text-justify">
-        Safe Navigation in Human Occupied Environments Using Sampling and
-        Control Barrier Functions
-      </h3>
-      <p class="font-light text-sm">
-        <ins>K. Majd</ins>, S. Yaghoubi, T. Yamaguchi, B. Hoxha, D. Prokhorov,
-        and G. Fainekos
-      </p>
-      <i class="font-light text-sm">
-        IEEE/RSJ International Conference on Intelligent Robots and Systems
-        (IROS), 2021.
-      </i>
-      <p class="my-2 text-justify"></p>
-      <a href="/bib/iros21.txt">[BibTex]</a>
-      <!-- <a href="/posters/poster_ICRA2022.png">[poster]</a> -->
+  <div class="pub-row">
+    <div class="pub-badge"><span class="badge">IROS'21</span></div>
+    <div class="pub-content">
+      <h3 class="font-semibold mb-0.2 text-justify">Safe Navigation in Human Occupied Environments Using Sampling and Control Barrier Functions</h3>
+      <p class="font-light text-sm"><ins>K. Majd</ins>, S. Yaghoubi, T. Yamaguchi, B. Hoxha, D. Prokhorov, and G. Fainekos</p>
+      <i class="font-light text-sm">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021.</i>
+      <a href="/bib/iros21.txt">BibTex</a>
     </div>
   </div>
 
-  <br />
-  <div class="row">
-    <div class="column left">
-      <span class="badge">L-CSS'20</span>
-    </div>
-    <div class="column right">
-      <h3 class="font-semibold mb-0.2 text-justify">
-        Risk-bounded Control using Stochastic Barrier Functions
-      </h3>
-      <p class="font-light text-sm">
-        S. Yaghoubi, <ins>K. Majd</ins>, G. Fainekos, T. Yamaguchi, D.
-        Prokhorov, and B. Hoxha
-      </p>
-      <i class="font-light text-sm"> IEEE Control Systems Letters.</i>
-      <p class="my-2 text-justify"></p>
-      <a href="/bib/lcss20.txt">[BibTex]</a>
-      <!-- <a href="/posters/poster_ICRA2022.png">[poster]</a> -->
+  <div class="pub-row">
+    <div class="pub-badge"><span class="badge">L-CSS'20</span></div>
+    <div class="pub-content">
+      <h3 class="font-semibold mb-0.2 text-justify">Risk-bounded Control using Stochastic Barrier Functions</h3>
+      <p class="font-light text-sm">S. Yaghoubi, <ins>K. Majd</ins>, G. Fainekos, T. Yamaguchi, D. Prokhorov, and B. Hoxha</p>
+      <i class="font-light text-sm">IEEE Control Systems Letters.</i>
+      <a href="/bib/lcss20.txt">BibTex</a>
     </div>
   </div>

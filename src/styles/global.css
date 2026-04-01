@@ -42,6 +42,22 @@ a:active {
     text-decoration: none;
 }
 
+/* Inline text links – distinct blue, not affecting buttons/badges/icons */
+p a:not(.btn), .text-justify a:not(.btn), .pub-content > i a:not(.btn), .mb-10 a:not(.btn) {
+    color: hsl(215 45% 38%);
+}
+[data-theme="black"] p a:not(.btn),
+[data-theme="black"] .text-justify a:not(.btn),
+[data-theme="black"] .pub-content > i a:not(.btn),
+[data-theme="black"] .mb-10 a:not(.btn) {
+    color: hsl(215 45% 68%);
+}
+
+/* Author names in project pages – same color whether linked or not */
+h2.font-light.text-2xl a {
+    color: inherit;
+}
+
 /* ─── Improve theme readability ─── */
 [data-theme="wireframe"] {
     --bc: 0 0% 13%;          /* near-black body text */

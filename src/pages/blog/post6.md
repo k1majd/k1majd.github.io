@@ -6,32 +6,6 @@ pubDate: "Sep 5 2023"
 heroImage: "/projects/nnreplayer_prosthesis/tumb8.jpg"
 badge: "IROS'23"
 ---
-<style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two unequal columns that floats next to each other */
-    .column {
-      float: left;
-      padding: 1px;
-    }
-
-    .left {
-      width: 13%;
-    }
-
-    .right {
-      width: 87%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-</style>
 <div class="mb-5">
     <h2 style="text-align:center " id="center" class="text-3xl w-full font-bold ">Safety-aware Expansion for Neural Network Repair</h2>
   </div>
@@ -62,7 +36,7 @@ badge: "IROS'23"
   </div>
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (IROS-workshop)</a>
-    <a href="/posters/poster_iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Poster</a>
+		<a href="/papers/iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Full Paper (IROS-workshop)</a>
+    <a href="/posters/poster_iros2023.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Poster</a>
     </div>
 </div>

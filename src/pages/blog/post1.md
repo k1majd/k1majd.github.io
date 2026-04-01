@@ -6,32 +6,6 @@ pubDate: "Dec 6 2022"
 heroImage: "/projects/nnreplayer_prosthesis/tumb1.png"
 badge:  "CoRL'22 - NeurIPS'22"
 ---
-<style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two unequal columns that floats next to each other */
-    .column {
-      float: left;
-      padding: 1px;
-    }
-
-    .left {
-      width: 13%;
-    }
-
-    .right {
-      width: 87%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-</style>
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold ">Safe Robot Learning in Assistive Devices through Neural Network Repair</h2>
   </div>
@@ -70,11 +44,11 @@ badge:  "CoRL'22 - NeurIPS'22"
 <div class=" col-xs-12 col-sm-2 ">
 <div class="center">
     <div id="col_inner_id-638fba18b86c0" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (CoRL)</a>	
-        <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-primary" data-mtop="0" data-mbottom="0">Full Paper (NeurIPS)</a>	
-        <a href="https://github.com/k1majd/NNRepLayer.git" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Source Code</a>
-        <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Talk (NeurIPS)</a>
-        <a href="/posters/poster_neurips2022.png" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-primary" data-mtop="0" data-mbottom="0">Poster</a></div>
+		<a href="/papers/CoRL22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Full Paper (CoRL)</a>	
+        <a href="/papers/Neurips22.pdf" target="_blank" id="button_35873d1d8b5611a5c514ec3437e68163" class="btn btn-outline" data-mtop="0" data-mbottom="0">Full Paper (NeurIPS)</a>	
+        <a href="https://github.com/k1majd/NNRepLayer.git" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-outline" data-mtop="0" data-mbottom="0">Source Code</a>
+        <a href="https://recorder-v3.slideslive.com/#/share?share=77885&s=05218cda-a354-4f6d-a6fb-8455c79c27ad" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-outline" data-mtop="0" data-mbottom="0">Talk (NeurIPS)</a>
+        <a href="/posters/poster_neurips2022.png" target="_blank" id="button_c260602177e94629b947d73881f0eb0a" class="btn btn-outline" data-mtop="0" data-mbottom="0">Poster</a></div>
         </div>
 </div>
 <br />
@@ -91,46 +65,23 @@ badge:  "CoRL'22 - NeurIPS'22"
   <div class="mb-5">
     <div class="text-2xl w-full font-bold">Publications</div>
   </div>
-  <div class="row">
-    <div class="column left">
-      <span class="badge">NeurIPS'22</span>
-    </div>
-    <div class="column right">
-      <h3 class="font-semibold mb-0.2 text-justify">
-        Certifiably-correct Control Policies for Safe Learning and Adaptation in
-        Assistive Robotics
-      </h3>
-      <span style="color: #ff0000"><a href="/projects/nnreplayer_prosthesis/neurips_prize.pdf">(Best Paper 2nd Runner-up Award)</a></span>
-      <p class="font-light text-sm">
-        <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
-        G. Fainekos, H. Ben Amor
-      </p>
-      <i class="font-light text-sm">
-        Neural Information Processing Systems (NeurIPS) - Robot Learning
-        Workshop, 2022.
-      </i>
-      <p class="my-2 text-justify"></p>
-      <a href="/bib/neurips22.txt">[BibTex]</a>
+  <div class="pub-row">
+    <div class="pub-badge"><span class="badge">NeurIPS'22</span></div>
+    <div class="pub-content">
+      <h3 class="font-semibold mb-0.2 text-justify">Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics</h3>
+      <span class="badge badge-secondary text-xs">Best Paper 2nd Runner-up</span>
+      <p class="font-light text-sm"><ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan, G. Fainekos, H. Ben Amor</p>
+      <i class="font-light text-sm">Neural Information Processing Systems (NeurIPS) - Robot Learning Workshop, 2022.</i>
+      <a href="/bib/neurips22.txt">BibTex</a>
     </div>
   </div>
 
-  <br />
-  <div class="row">
-    <div class="column left">
-      <span class="badge">CoRL'22</span>
-    </div>
-    <div class="column right">
-      <h3 class="font-semibold mb-0.2 text-justify">
-        Safe Robot Learning in Assistive Devices through Neural Network Repair
-      </h3>
-      <p class="font-light text-sm">
-        <ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan,
-        G. Fainekos, H. Ben Amor
-      </p>
-      <i class="font-light text-sm">
-        Conference on Robot Learning (CoRL), 2022.
-      </i>
-      <p class="my-2 text-justify"></p>
-      <a href="/bib/corl22.txt">[BibTex]</a>
+  <div class="pub-row">
+    <div class="pub-badge"><span class="badge">CoRL'22</span></div>
+    <div class="pub-content">
+      <h3 class="font-semibold mb-0.2 text-justify">Safe Robot Learning in Assistive Devices through Neural Network Repair</h3>
+      <p class="font-light text-sm"><ins>K. Majd</ins>, G. Clark, T. Khandait, S. Zhou, S. Sankaranarayanan, G. Fainekos, H. Ben Amor</p>
+      <i class="font-light text-sm">Conference on Robot Learning (CoRL), 2022.</i>
+      <a href="/bib/corl22.txt">BibTex</a>
     </div>
   </div>
