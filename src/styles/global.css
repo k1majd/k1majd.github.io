@@ -1,3 +1,46 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* Global link styles */
+a:link {
+    color: hsl(var(--p));
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: hsl(var(--p));
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(var(--pf));
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: hsl(var(--pf));
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Publication / News row layout */
+.pub-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.pub-row .pub-badge {
+    flex-shrink: 0;
+    width: 5.5rem;
+    padding-top: 0.15rem;
+}
+
+.pub-row .pub-content {
+    flex: 1;
+    min-width: 0;
+}

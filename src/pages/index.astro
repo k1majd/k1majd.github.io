@@ -12,31 +12,6 @@ const last_posts = posts.slice(0, 5);
 ---
 
 <BaseLayout>
-  <style>
-    a:link {
-      color: green;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: green;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: green;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    a:active {
-      color: green;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-  </style>
   <div class="pb-12 mt-5">
     <div class="text-5xl font-bold">Keyvan Majd</div>
     <div class="text-3xl py-3 font-bold">Research Engineer @ Toyota Research Institute</div>
@@ -74,36 +49,9 @@ const last_posts = posts.slice(0, 5);
       </p>
     </div>
   </div>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
-    /* Create two unequal columns that floats next to each other */
-    .column {
-      float: left;
-      padding: 1px;
-    }
-
-    .left {
-      width: 13%;
-    }
-
-    .right {
-      width: 87%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  </style>
   <div style="margin-bottom:1cm;">
-    <div class="text-3xl w-full font-bold mb-2">
-      Current research projects {"</>"}
-    </div>
+    <div class="text-3xl w-full font-bold mb-2">Past research projects</div>
     <HorizontalCard
       title={last_posts[0].frontmatter.title}
       img={last_posts[0].frontmatter.heroImage}
@@ -121,11 +69,7 @@ const last_posts = posts.slice(0, 5);
       badge={last_posts[1].frontmatter.badge}
       target="_self"
     />
-    <!-- <div class="divider my-0"></div> -->
-  </div>
-
-  <div style="margin-bottom:1cm;">
-    <div class="text-3xl w-full font-bold mb-2">Past research projects</div>
+    <div class="divider my-0"></div>
     <HorizontalCard
       title={last_posts[2].frontmatter.title}
       img={last_posts[2].frontmatter.heroImage}
@@ -162,128 +106,69 @@ const last_posts = posts.slice(0, 5);
     <div class="text-3xl w-full font-bold">News</div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Jan 2026</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Jan 2026</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Our paper "Safe Model Predictive Diffusion with Shielding" has been accepted to <b>ICRA 2026</b>!
-      </div>
+    <div class="pub-content text-justify">
+      Our paper "Safe Model Predictive Diffusion with Shielding" has been accepted to <b>ICRA 2026</b>!
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Jun 2025</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Jun 2025</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Two papers accepted: "GPU-Accelerated Barrier Rate MPPI Control for Tractor-Trailer Navigation" at <b>ITSC 2025</b>,
-        and "Robot Behavior Adaptation in Physical Human-Robot Interactions" at <b>IROS 2025</b>!
-      </div>
+    <div class="pub-content text-justify">
+      Two papers accepted: "GPU-Accelerated Barrier Rate MPPI Control for Tractor-Trailer Navigation" at <b>ITSC 2025</b>,
+      and "Robot Behavior Adaptation in Physical Human-Robot Interactions" at <b>IROS 2025</b>!
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Dec 2024</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Dec 2024</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        I successfully defended my Ph.D. dissertation "Safe Robot Learning with Neural Network Repair" at Arizona State University!
-      </div>
+    <div class="pub-content text-justify">
+      I successfully defended my Ph.D. dissertation "Safe Robot Learning with Neural Network Repair" at Arizona State University!
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Oct 2024</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Oct 2024</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Joined <b>Toyota Research Institute of North America</b> as a Research Engineer, working on autonomous maneuvering and motion planning.
-      </div>
+    <div class="pub-content text-justify">
+      Joined <b>Toyota Research Institute of North America</b> as a Research Engineer, working on autonomous maneuvering and motion planning.
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Jun 2024</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Jun 2024</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Our paper "Repairing Neural Networks for Safety in Robotic Systems using Predictive Models" has been accepted to <b>IROS 2024</b>!
-      </div>
+    <div class="pub-content text-justify">
+      Our paper "Repairing Neural Networks for Safety in Robotic Systems using Predictive Models" has been accepted to <b>IROS 2024</b>!
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Dec 2022</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Dec 2022</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Our paper <a href="/papers/Neurips22.pdf">"Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics"</a>
-        received <b>a Best Paper Award (2nd Runner-up)</b> at NeurIPS 2022 Robot Learning Workshop!
-      </div>
+    <div class="pub-content text-justify">
+      Our paper <a href="/papers/Neurips22.pdf">"Certifiably-correct Control Policies for Safe Learning and Adaptation in Assistive Robotics"</a>
+      received <b>a Best Paper Award (2nd Runner-up)</b> at NeurIPS 2022 Robot Learning Workshop!
     </div>
   </div>
 
-  <div class="row">
-    <div class="column left">
-      <span class="badge date">Sep 2022</span>
+  <div class="pub-row">
+    <div class="pub-badge">
+      <span class="badge badge-outline">Sep 2022</span>
     </div>
-    <div class="column right">
-      <div class="mb-10 text-justify">
-        Our paper <a href="https://openreview.net/forum?id=X4228W0QpvN">"Safe Robot Learning in Assistive Devices through Neural Network Repair"</a>
-        has been accepted to <a href="https://corl2022.org">CoRL 2022</a>!
-      </div>
+    <div class="pub-content text-justify">
+      Our paper <a href="https://openreview.net/forum?id=X4228W0QpvN">"Safe Robot Learning in Assistive Devices through Neural Network Repair"</a>
+      has been accepted to <a href="https://corl2022.org">CoRL 2022</a>!
     </div>
   </div>
-
-  <!-- <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-    </div>
-
-    <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      badge="NEW"
-    />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-    </div>
-
-    {
-      last_posts.map((post) => (
-        <HorizontalCard
-          title={post.frontmatter.title}
-          img={post.frontmatter.heroImage}
-          desc={post.frontmatter.description}
-          url={post.url}
-          target="_self"
-        />
-        <div class="divider my-0"></div>
-      ))
-    } -->
 </BaseLayout>
