@@ -265,7 +265,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   /* ── Normalise & tokenise for fuzzy matching ── */
   function norm(s: string) {
-    return s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+    return s.toLowerCase().replace(/[-–—]/g, ' ').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
   }
   function words(s: string) {
     return new Set(norm(s).split(' ').filter(w => w.length > 2));
