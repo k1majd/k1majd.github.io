@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import BaseLayout from "./BlankLayout.astro";
 
 export interface Props {
-  content: {
+  frontmatter: {
     title: string;
     description: string;
     pubDate?: string;
@@ -13,7 +13,7 @@ export interface Props {
 }
 
 const {
-  content: { title, description, pubDate, updatedDate, heroImage },
+  frontmatter: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
 ---
 
