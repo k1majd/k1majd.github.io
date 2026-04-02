@@ -3,7 +3,7 @@ layout: "../../layouts/BlankLayout.astro"
 title: "Safe Model Predictive Diffusion with Shielding"
 description: "A training-free diffusion planner that generates provably safe and kinodynamically feasible trajectories by integrating a safety shield into the denoising process."
 pubDate: "Apr 1 2026"
-heroImage: "/projects/safe_mpd/teaser.png"
+heroImage: "/projects/safe_mpd/teaser.gif"
 badge: "ICRA'26"
 ---
 <div class="mb-5">
@@ -29,7 +29,7 @@ badge: "ICRA'26"
   </div>
 <div>
     <img
-        src="/projects/safe_mpd/teaser.png"
+        src="/projects/safe_mpd/teaser.gif"
         alt="Safe MPD teaser"
     />
 </div>
