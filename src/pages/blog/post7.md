@@ -9,6 +9,24 @@ badge: "ICRA'26 - ITSC'25"
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold">GPU-Accelerated Safe Motion Planning for Articulated Vehicles</h2>
   </div>
+<div class="mb-5">
+    <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold"><a
+        href="https://www.taekyung.me/"
+        >T. Kim</a
+      >, <a
+        href="https://k1majd.github.io"
+        >K. Majd</a
+      >, <a
+        href="https://hamidreza-p.github.io/"
+        >H. Parwana</a
+      >, B. Hoxha, S. Hong, H. Okamoto, <a
+        href="https://dpanagou.engin.umich.edu/"
+        >D. Panagou</a
+      >, <a
+        href="https://fainekos.net"
+        >G. Fainekos</a
+      ></h2>
+  </div>
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;" class="mb-4">
 <img src="/logos/images.jpeg" alt="Toyota Logo" style="height:36px; width:auto;" />
 <img src="/logos/University-of-Michigan-Logo-500x281.png" alt="University of Michigan Logo" style="height:80px; width:auto;" />
