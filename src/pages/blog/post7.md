@@ -10,7 +10,7 @@ badge: "ICRA'26 - ITSC'25"
     <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold">GPU-Accelerated Safe Motion Planning for Articulated Vehicles</h2>
   </div>
 <div class="mb-5">
-    <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold"><a
+    <h2 style="text-align:center" id="center" class="font-light text-base w-full"><a
         href="https://www.taekyung.me/"
         >T. Kim</a
       >, <a
