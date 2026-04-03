@@ -10,17 +10,26 @@ badge: "ICRA'26 - ITSC'25"
     <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold">GPU-Accelerated Safe Motion Planning for Articulated Vehicles</h2>
   </div>
 <div class="mb-5">
-    <h2 style="text-align:center" id="center" class="font-light text-base w-full"><a
+    <h2 style="text-align:center" id="center" class="font-light text-2xl w-full font-bold"><a
         href="https://www.taekyung.me/"
         >T. Kim</a
       >, <a
         href="https://k1majd.github.io"
         >K. Majd</a
       >, <a
-        href="https://hamidreza-p.github.io/"
+        href="https://www.linkedin.com/in/hardik-parwana/"
         >H. Parwana</a
-      >, B. Hoxha, S. Hong, H. Okamoto, <a
-        href="https://dpanagou.engin.umich.edu/"
+      >, <a
+        href="https://www.bhoxha.com"
+        >B. Hoxha</a
+      >, <a
+        href="https://www.linkedin.com/in/steven-hong/"
+        >S. Hong</a
+      >, <a
+        href="https://www.linkedin.com/in/hideki-okamoto-264014281/"
+        >H. Okamoto</a
+      >, <a
+        href="https://public.websites.umich.edu/~dpanagou/"
         >D. Panagou</a
       >, <a
         href="https://fainekos.net"
