@@ -9,6 +9,10 @@ badge: "ICRA'26 - ITSC'25"
 <div class="mb-5">
     <h2 style="text-align:center" id="center" class="text-3xl w-full font-bold">GPU-Accelerated Safe Motion Planning for Articulated Vehicles</h2>
   </div>
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;" class="mb-4">
+<img src="/logos/images.jpeg" alt="Toyota Logo" style="height:36px; width:auto;" />
+<img src="/logos/University-of-Michigan-Logo-500x281.png" alt="University of Michigan Logo" style="height:36px; width:auto;" />
+</div>
 <div>
     <img
         src="/projects/safe_mpd/teaser.gif"
