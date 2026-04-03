@@ -1,0 +1,6 @@
+@inproceedings{majd2025brmppi,
+  author    = {Majd, Keyvan and Parwana, Hardik and Hoxha, Bardh and Hong, Steven and Okamoto, Hideki and Fainekos, Georgios},
+  title     = {GPU-Accelerated Barrier-Rate Guided MPPI Control for Tractor-Trailer Systems},
+  booktitle = {IEEE International Conference on Intelligent Transportation Systems (ITSC)},
+  year      = {2025}
+}
