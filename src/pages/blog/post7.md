@@ -11,7 +11,7 @@ badge: "ICRA'26 - ITSC'25"
   </div>
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;" class="mb-4">
 <img src="/logos/images.jpeg" alt="Toyota Logo" style="height:36px; width:auto;" />
-<img src="/logos/University-of-Michigan-Logo-500x281.png" alt="University of Michigan Logo" style="height:50px; width:auto;" />
+<img src="/logos/University-of-Michigan-Logo-500x281.png" alt="University of Michigan Logo" style="height:80px; width:auto;" />
 </div>
 <div>
     <img
